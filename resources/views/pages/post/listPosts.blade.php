@@ -1,13 +1,11 @@
 @extends('layouts.layouts')
 
 @section('title')
-    list-tags
+    List
 @endsection
 
 
 @section('body')
-
-    <a class="m-3 btn btn-primary" href="/admin/create-post">Create new post</a>
 
     @if(isset($successMessage))
         <div class="alert alert-success">
@@ -25,8 +23,7 @@
     </div>
     @enderror
 
-
-    <table class="table table table-hover">
+    <table class="table table table-hover mt-5">
         <thead>
         <tr>
             <th scope="col">id</th>

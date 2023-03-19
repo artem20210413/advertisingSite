@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Post;
 
-use App\Services\PostsService;
+use App\Services\Ad\PostsService;
 use Illuminate\Routing\Controller as BaseController;
 
 class PostController extends BaseController

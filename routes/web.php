@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Post\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PostController::class, 'list']);
+
+
+Route::get('/login', [AuthController::class, 'showLogin']);
+Route::post('/login', [AuthController::class, 'handleLogin']);
+Route::get('/registration ', [AuthController::class, 'showRegistration']);
+Route::post('/registration', [AuthController::class, 'handleRegistration']);
