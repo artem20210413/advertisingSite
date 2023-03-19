@@ -19,7 +19,8 @@ class AuthController extends BaseController
 
     public function handleLogin(LoginRequest $request)
     {
-
+        $input = $request->only('email', 'password');
+        dd($input['email']);
         dd('login');
         return redirect(route('list'));
     }
